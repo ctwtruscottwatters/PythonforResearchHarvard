@@ -1,0 +1,139 @@
+Acorn RISC (Reduced Instruction Set Computing) Advanced RISC Machine
+
+RISC architecture work done at UCal Berkley and Stanford
+
+Cortex-A9 ARMv7
+
+
+
+ARM Features
+
+Similar to RISC architecture (not purely RISC)
+
+Variable-cycle instructions (LD / STR multiple)
+
+Inline barrel shifter
+
+16 bit (thumb) and 32 bit instruction sets combined called thumb 2
+
+Conditional execution (reduces number of branches)
+
+Auto increment decrement addressing modes
+
+Modified Harvard architecture since ARMv5 ARM9
+
+Extensions
+
+TrustZone, VFP, NEON, SIMD, DSP and Multimedia Processing
+
+
+
+REGISTERS
+
+37 registers
+
+- 30 general purpose
+
+- 1 pc program counter
+
+1 CPSR - current program status register
+
+- SPSR saved program status register
+
+	(the saved CPSR for each of the five exception modes)
+
+several exception modes
+
+10:02
+
+
+r0
+r9
+r10 (SL)
+r11 (FP)
+r12 (IP)
+r13 (SP)
+r14 (LR)
+r15 (PC)
+
+CPSR
+
+(SP) stack pointer top element of the stack address
+(LR) link register saves the pc when entering a subroutine
+(PC) address of the next instruction (ARM +8 thumb +4)
+(IP) not instruction pointer but intra procedural call scratch register
+CPSR results of most recent operations including flags, interrupts, enable / disable and modes
+
+fetch -> decode -> execute
+
+18:51
+
+push <reg list> decrements the SP (4 bytes) and stores the values in <reg list> at that location
+pop <reg list> increments the SP (4 bytes) and stores the values at SP in <reg list>
+
+ADD
+ADC
+SUB
+SBC
+RSB
+RSC
+MUL
+MLA
+MLS
+multiply operations only store least significant 32 bits
+SDIV
+UDIV
+NOP
+
+Hardware optimisation inline with the arithmetic logic unit allows for a multiplier (power of 2) within same instruction cycle
+
+Allows for shifting a register value by either an unsigned integer or value at the bottom byte of a nother register
+
+
+ASR - arithmetic shift right
+LSL - logical shift left
+LSR - logical shift right
+ROR - rotate right
+RRX - rotate right with extend
+MOV
+MOVT
+MOVS PC
+MVN Bitwise NOT of value into dest
+REV
+REV16
+REVSH
+AND
+BIC
+EOR
+ORR
+ORN
+CMP
+CMN
+TEQ
+TST
+BIC
+LDR
+STR
+B
+BL
+BLE
+BGT
+BEQ
+BNE
+BLX
+BlX
+BX
+CBZ
+CBNZ
+TBB
+TBH
+
+
+
+
+
+
+
+
+
+ELF (executable linkable format)

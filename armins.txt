@@ -1,0 +1,49 @@
+ADD
+ADC
+SUB
+SBC
+RSB
+RSC
+MUL
+MLA
+MLS
+SDIV
+UDIV
+NOP
+ASR - arithmetic shift right
+LSL - logical shift left
+LSR - logical shift right
+ROR - rotate right
+RRX - rotate right with extend
+MOV
+MOVT
+MOVS PC
+MVN Bitwise NOT of value into dest
+REV
+REV16
+REVSH
+AND
+BIC
+EOR
+ORR
+ORN
+CMP
+CMN
+TEQ
+TST
+BIC
+LDR
+STR
+B
+BL
+BLE
+BGT
+BEQ
+BNE
+BLX
+BlX
+BX
+CBZ
+CBNZ
+TBB
+TBH
