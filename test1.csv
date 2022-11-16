@@ -1,0 +1,9 @@
+,Item,Cost,Amount,Dollar Range,Numerical Dollar Range,Amount Range,Numerical Amount Range,Cost per unit
+0,Waterproof Matches,21.0,320,Tens,10,Hundreds,100,0.65625
+1,Firelighters,17.5,100,Tens,10,Hundreds,100,1.75
+2,Alcohol Wipes,100.0,500,Hundreds,100,Hundreds,100,0.2
+3,Disinfectant Wipes,99.95,225,Tens,10,Hundreds,100,4.442222222222222
+4,Soap,20.0,50,Tens,10,Tens,10,0.4
+5,Masks,14.0,50,Tens,10,Tens,10,0.28
+6,Hand Sanitiser in mL,65.0,15000,Tens,10,NULL,0,0.0
+7,Picnic Basket,120.0,1,Hundreds,100,Tens,10,12.0
